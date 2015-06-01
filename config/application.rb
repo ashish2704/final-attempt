@@ -22,5 +22,7 @@ module MyNews
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    # required for heroku on 1 o clock 1 st june
+    config.assets.initialize_on_precompile = false
   end
 end
